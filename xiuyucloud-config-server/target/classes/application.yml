@@ -1,0 +1,13 @@
+server: 
+  port: 3344 
+  
+spring:
+  application:
+    name: xiuyu-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/qq1186943772/resource.git  #GitHub上面的git仓库名字
+          force-pull: true #设置成强制pull拉去
+          
